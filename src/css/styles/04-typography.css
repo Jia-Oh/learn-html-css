@@ -9,12 +9,39 @@ h1 {
 }
 
 /* 글자 크기 */
-.wrapper {
+/* .wrapper {
   font-size: 20px;
-}
+} */
 .wrapper blockquote {
-  font-size: 1.5em;
+  font-size: 15px;
+  line-height: 1.5;
 }
 .like {
-  font-size: 1.5rem;
+  font-size: 30px;
+}
+
+/* 글꼴 스타일 */
+h1 {
+  font-style: italic;
+}
+
+/* 자간 조절하기 */
+h1 {
+  letter-spacing: 0.2em;
+}
+
+/* 정렬 */
+.bootcamp {
+  height: 200px;
+  border: 1px solid red;
+  padding: 20px;
+  background-color: var(--yellow);
+  text-align: center;
+  /* align-content: center; */
+  line-height: 160px;
+}
+
+/* 글자 그림자 */
+.bootcamp {
+  text-shadow: 1px 1px 0 red;
 }
