@@ -27,10 +27,10 @@ body {
 
 .box3 {
   background-color: pink;
-  float: left;
+  float: right;
 }
 
 .box4 {
   background-color: aqua;
-  float: left;
+  float: right;
 }
