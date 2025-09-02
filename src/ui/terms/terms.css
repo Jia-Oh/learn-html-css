@@ -1,4 +1,9 @@
 /* 컴포넌트 */
+
+body {
+  margin: 20px;
+}
+
 .term {
   --accent-color: #296897;
   --text-size: 1rem;
@@ -26,5 +31,78 @@
   .description {
     margin-top: 10px;
     font-size: 1em;
+  }
+}
+
+/* 레이아웃 내 코드 */
+/* .terms {
+  --gray-700: #7a7a7a;
+  --gray-500: #cccccc;
+  --gray-600: #eeeeee;
+  --spacing: 1rem;
+
+  background: var(--gray-600) linear-gradient(var(--gray-600), var(--gray-500));
+  border: 1px solid var(--gray-700);
+  border-radius: 10px;
+  padding: var(--spacing);
+  width: 250px;
+
+  .headline {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing);
+  }
+
+  .term {
+    margin-top: calc(var(--spacing) - 4px);
+  }
+
+  & .term:nth-child(2n + 1) {
+    .subject,
+    .description {
+      float: left;
+    }
+
+    .thumbnail {
+      float: right;
+    }
+  }
+} */
+
+/* 슬비쌤 레이아웃 코드 */
+
+.terms {
+  --gray-700: #7a7a7a;
+  --gray-600: #cccccc;
+  --gray-500: #eeeeee;
+  --spacing: 1rem;
+
+  background: var(--gray-600) linear-gradient(var(--gray-600), var(--gray-500));
+  border: 1px solid var(--gray-700);
+  border-radius: 10px;
+  padding: var(--spacing);
+  width: 250px;
+
+  .headline {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing);
+  }
+
+  .term {
+    margin-top: calc(var(--spacing) - 4px);
+  }
+
+  & .term:nth-child(odd) {
+    background: pink;
+
+    .subject,
+    .description {
+      float: left;
+    }
+
+    .thumbnail {
+      float: right;
+    }
   }
 }
