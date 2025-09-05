@@ -145,6 +145,7 @@ body {
       color: var(--primary-color);
       font-size: 10px;
       translate: 0 -150%;
+      background-color: #fff;
     }
   }
 
@@ -153,12 +154,14 @@ body {
     inset-block-start: 50%;
     inset-inline-start: 24px;
     translate: 0 -50%;
+    background-color: yellow;
   }
 
   input {
     inline-size: 100%;
     border: 0 none;
     background: transparent;
+    background-color: pink;
     outline: none;
   }
 }
@@ -172,5 +175,39 @@ body {
     margin-block: 4px;
     margin-inline-start: 24px;
     /* display: none; */
+  }
+}
+
+/* 콤보박스 - 슬비쌤 코드 */
+.combo-box {
+  --text-color: var(--gray-500);
+
+  background: #ffc;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  position: relative;
+  color: var(--text-color);
+
+  svg {
+    position: absolute;
+    pointer-events: none;
+  }
+
+  > svg:nth-of-type(1) {
+    inset-inline-start: 8px;
+  }
+
+  > svg:nth-of-type(2) {
+    inset-inline-end: 8px;
+  }
+
+  select {
+    inline-size: 100%;
+    padding: 0.25em 1.5em 0.25em 2em;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    color: inherit;
+    appearance: none;
   }
 }
