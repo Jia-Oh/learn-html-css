@@ -2,31 +2,6 @@ body {
   margin: 20px;
 }
 
-/* h1 {
-  margin-block-end: 20px;
-}
-
-.members-wrapper {
-  block-size: 500px;
-  background-color: #ffc;
-  overflow: auto;
-}
-
-thead {
-  position: sticky;
-  background-color: black;
-  color: white;
-
-  & th {
-    padding-block: 10px;
-    padding-inline: 9px;
-  }
-
-  tbody tr:nth-child(odd) {
-    background-color: lightgrey;
-  }
-} */
-
 /* 슬비쌤 코드 */
 .members-wrapper {
   inline-size: 100%;
