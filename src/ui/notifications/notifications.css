@@ -1,31 +1,8 @@
 body {
   margin: 20px;
 }
-/* 내 코드 */
-/* .notification {
-  --black: #121212;
-  --green: #22be61;
-  --gray: #9b9a90;
-  --white: #fff;
 
-  border: 1px solid lightgrey;
-  border-radius: 10px;
-  padding: 20px;
-
-  display: flex;
-  flex-flow: row nowrap;
-}
-.notification-icon,
-.notification-content {
-  margin-inline: 10px;
-}
-.notification-content {
-  time {
-    margin-inline-start: 10px;
-  }
-} */
-
-/* 슬비쌤 코드 */
+/* 슬비쌤 코드 - 미디어 커리 중첩 ver. */
 .notification {
   --black: #121212;
   --green: #22be61;
@@ -81,6 +58,36 @@ body {
   }
 }
 
+/* 레이아웃 */
+.notification-wrapper {
+  --gap: 30px;
+
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: var(--gap);
+
+  @media (width > 600px) {
+    column-gap: var(--gap);
+  }
+
+  li {
+    display: contents;
+  }
+
+  .notification {
+    inline-size: 100%;
+
+    @media (width > 600px) {
+      inline-size: calc((100% - var(--gap) * 1) / 2);
+    }
+
+    @media (width > 1000px) {
+      inline-size: calc((100% - var(--gap) * 3) / 4);
+    }
+  }
+}
+
 /* 미디어 커리 노중첩 ver. */
 /* .notification-wrapper {
   border: 1px solid red;
@@ -113,29 +120,3 @@ body {
     inline-size: calc(25% - (var(--gap) / 2));
   }
 } */
-
-/* 미디어 커리 중첩 ver. */
-.notification-wrapper {
-  --gap: 30px;
-
-  /* border: 1px solid red; */
-  display: flex;
-  flex-flow: row wrap;
-  row-gap: var(--gap);
-
-  @media (width > 600px) {
-    column-gap: var(--gap);
-  }
-
-  .notification {
-    inline-size: 100%;
-
-    @media (width > 600px) {
-      inline-size: calc((100% - var(--gap) * 1) / 2);
-    }
-
-    @media (width > 1000px) {
-      inline-size: calc((100% - var(--gap) * 3) / 4);
-    }
-  }
-}
